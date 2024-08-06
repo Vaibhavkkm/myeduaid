@@ -8,6 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/signup_style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+  href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
+  rel="stylesheet"
+  type="text/css"
+  />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
 
 	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -135,10 +148,10 @@
                                         </nav>
                                     </div>
                                     <!-- Header-btn -->
-                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                    <!-- <div class="header-right-btn d-none d-lg-block ml-20">
                                         <a href="contact.html" class="btn header-btn">Sign-up</a>
                                         <a href="contact.html" class="btn header-btn">Sign-in</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div> 
                             <!-- Mobile Menu -->
@@ -157,17 +170,30 @@
 
         <div>
             <div class="hero-cap hero-cap2 pt-20 text-center">
-                <h2 class="heading">About Us</h2>
+                <h2 class="heading">Sign-Up</h2>
             </div>
         </div>
 
-        <div style="display: flex; justify-content: center; align-items: center; height: 30pc;">
-
-            <p class="" style="font-size: 15vb; opacity: 0.3;"> Coming Soon...</p>
-
+        <div class="login-page">
+          <div class="form">
+            <form>
+              <input type="text" placeholder="Full Name" />
+              <input type="text" placeholder="E-mail address" />
+              <input type="text" placeholder="User Name" />
+              <input type="password" id="password" placeholder="Password" /> <i class="fas fa-eye light eye-pos" onclick="show()"></i>
+              <br>
+              <br>
+            </form>
+    
+            <form class="login-form">
+              <button type="button" onclick="window.location.href='login.html'">
+                SIGN UP
+              </button>
+            </form>
+          </div>
         </div>
 
-    </main>
+      </main>
     <footer style="background-color: whitesmoke;">
         <div class="footer-wrapper section-bg2"  id="contact">
             <!-- Footer Top-->
@@ -330,6 +356,20 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <script>
+      function show() {
+        var password = document.getElementById("password");
+        var icon = document.querySelector(".fas");
+  
+        // ========== Checking type of password ===========
+        if (password.type === "password") {
+          password.type = "text";
+        } else {
+          password.type = "password";
+        }
+      }
+    </script>
     
     </body>
 </html>

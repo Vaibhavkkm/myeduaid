@@ -171,7 +171,10 @@ testimonial.slick({
 
 
 /* 10. WOW active */
-    new WOW().init();
+    // new WOW().init();
+
+    //  10.1 AOS inti
+    // AOS.init();
 
 // 11. ---- Mailchimp js --------//  
     function mailChimp() {

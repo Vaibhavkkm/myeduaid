@@ -3010,7 +3010,7 @@ hr {
 .section-bg {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   background-attachment: fixed;
 }
 
@@ -3794,8 +3794,8 @@ hr {
 /* line 72, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_about.scss */
 .about-low-area .about-img .about-back-img {
   position: absolute;
-  top: 5pc;
-  right: 40px;
+  top: -5pc;
+  right: 8pc;
   z-index: 1;
 }
 
