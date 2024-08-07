@@ -2487,7 +2487,7 @@ hr {
   height: 100px;
   position: relative;
   border-style: solid;
-  border-width: 1px;
+  border-width: 3px;
   border-top-color: #45671b;
   border-bottom-color: transparent;
   border-left-color: transparent;
@@ -3794,8 +3794,8 @@ hr {
 /* line 72, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_about.scss */
 .about-low-area .about-img .about-back-img {
   position: absolute;
-  top: -5pc;
-  right: 8pc;
+  top: 0pc;
+  right: 3pc;
   z-index: 1;
 }
 
