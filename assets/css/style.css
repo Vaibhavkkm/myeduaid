@@ -216,7 +216,7 @@ h6 {
 p {
   font-family: "Muli", sans-serif;
   color: #10285d;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   margin-bottom: 15px;
   font-weight: normal;
@@ -500,10 +500,10 @@ hr {
   font-family: "Muli", sans-serif;
   text-transform: capitalize;
   padding: 27px 44px;
-  color: #fff;
+  color: #45671b;
   cursor: pointer;
   display: inline-block;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   border-radius: 0px;
   line-height: 1;
@@ -571,7 +571,7 @@ hr {
 
 /* line 310, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
 .hero-btn {
-  padding: 30px 62px;
+  padding: 30px 50px;
 }
 
 /* line 314, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
@@ -3692,8 +3692,8 @@ hr {
 
 /* line 5, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_about.scss */
 .about-low-area .about-caption p {
-  font-size: 16px;
-  color: #64676c;
+  font-size: 18px;
+  color:black;
   line-height: 1.6;
   margin-bottom: 43px;
   padding-right: 50px;
@@ -3859,7 +3859,7 @@ hr {
 
 /* line 1, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_services_section.scss */
 .service-area {
-  background: #f8fcff;
+  background: #f8fff4;
 }
 
 /* line 3, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_services_section.scss */
@@ -4020,7 +4020,7 @@ hr {
 
 /* line 1, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_cases.scss */
 .our-cases-area {
-  background: #f8fcff;
+  background: #f8fff4;
 }
 
 /* line 4, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_cases.scss */
@@ -4075,7 +4075,7 @@ hr {
 /* line 34, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_cases.scss */
 .our-cases-area .single-cases .cases-caption .prices p {
   color: #45671b;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 @media (max-width: 575px) {
