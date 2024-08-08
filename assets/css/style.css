@@ -8317,4 +8317,25 @@ del {
   height: 36pc;
 }
 
+@media only screen and (max-width: 768px) {
+  .main-img {
+    display : none;
+  }
+}
+@media (max-width: 1200px) {
+  .main-img {
+    right: 0pc !important;
+  }
+}
+@media (max-width: 991px) {
+    #i1 {
+      height: 400px !important;
+    }
+}
+@media (max-width: 920px) {
+  #i1 {
+    height: 350px !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
