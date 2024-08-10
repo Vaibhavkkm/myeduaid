@@ -38,7 +38,13 @@
       menu.slicknav({
         prependTo: ".mobile_menu",
         closedSymbol: '+',
-        openedSymbol:'-'
+        openedSymbol:'-',
+        afterOpen: function() {
+          // Close the menu when a link is clicked
+          $('.slicknav_nav a').on('click', function(){
+              menu.slicknav('close');
+          });
+        }
       });
     };
 
