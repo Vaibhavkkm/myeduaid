@@ -2590,7 +2590,7 @@ hr {
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   /* line 719, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
   .section-padding2 {
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 200px;
   }
 }
@@ -2760,7 +2760,7 @@ hr {
 
 /* line 810, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
 .section-padding30 {
-  padding-top: 195px;
+  padding-top: 150px;
   padding-bottom: 180px;
 }
 
@@ -3868,7 +3868,7 @@ hr {
 /* line 3, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_services_section.scss */
 .service-area .single-cat {
   background: #ffffff;
-  border-radius: 6px;
+  border-radius: 2pc;
   padding: 85px 22px;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -3896,7 +3896,7 @@ hr {
   bottom: 0;
   left: 0;
   z-index: -1;
-  border-radius: 6px;
+  border-radius: 2pc;
 }
 
 /* line 26, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_services_section.scss */
