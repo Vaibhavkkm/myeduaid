@@ -49,7 +49,7 @@
     $('#back-top a').on("click", function () {
       $('body,html').animate({
         scrollTop: 0
-      }, 800);
+      }, 600);
       return false;
     });
   
