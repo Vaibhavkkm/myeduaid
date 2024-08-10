@@ -3305,7 +3305,7 @@ hr {
 .main-header .main-menu ul li a {
   color: #45671b;
   font-weight: 600;
-  padding: 39px 19px;
+  padding: 39px 15px;
   display: block;
   font-size: 17px;
   -webkit-transition: 0.3s;
@@ -3318,7 +3318,7 @@ hr {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* line 161, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_headerMenu.scss */
   .main-header .main-menu ul li a {
-    padding: 39px 14px;
+    padding: 39px 8px;
   }
 }
 
@@ -3485,8 +3485,8 @@ hr {
 }
 
 @media (max-width: 575px) {
-  /* line 2, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_h1-hero.scss */
   .slider-height {
+    /* line 2, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_h1-hero.scss */
     height: 500px;
   }
 }
@@ -3944,7 +3944,8 @@ hr {
 .service-area .single-cat .cat-cap p {
   margin-bottom: 36px;
   color: #57667e;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 600;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
@@ -8317,7 +8318,7 @@ del {
 }
 
 .card-height {
-  height: 36pc;
+  height: 35pc;
 }
 
 @media only screen and (max-width: 768px) {
@@ -8351,5 +8352,13 @@ del {
 .box-shadow {
   box-shadow: 0 0 10px 3px rgb(202 197 197 / 60%);
 }
-
+.my-btns {
+  background-color: #8fce41;
+  font-size: 25px; padding: 10px; 
+  font-weight: 700; 
+  border-style: thin; 
+  border-radius: 15px; 
+  border-color: white; 
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
