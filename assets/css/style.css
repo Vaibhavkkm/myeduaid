@@ -8320,7 +8320,14 @@ del {
 .card-height {
   height: 35pc;
 }
-
+@media (min-width: 1200px) {
+  .pad-b {
+    padding: 100px;
+  }
+  .text-h {
+    height: 12pc;
+  }
+}
 @media only screen and (max-width: 768px) {
   .main-img {
     display : none;
