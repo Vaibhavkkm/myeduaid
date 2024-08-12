@@ -3,21 +3,36 @@
   
 
 /* 1. Proloder */
-    $(window).on('load', function () {
-      $('#preloader-active').delay(450).fadeOut('slow');
-      $('body').delay(450).css({
-        'overflow': 'visible'
-      });
+$(window).on('load', function () {
+  $('#preloader-active').delay(150).fadeOut('slow', function() {
+    // After the preloader is completely hidden
+    $('body').css({
+      'overflow': 'visible'
     });
+    
+    // Initialize AOS
+    AOS.init({
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+    });
+  });
+});
 
 /* 2. sticky And Scroll UP */
     $(window).on('scroll', function () {
       var scroll = $(window).scrollTop();
-      if (scroll < 400) {
+      var stickyBarHeight = $(".header-sticky").outerHeight();
+      if (scroll < 1) {
         $(".header-sticky").removeClass("sticky-bar");
+        // $(".single-slider").removeClass("slider-h").addClass("slider-height");
+        $("body").css("padding-top", 0);
         $('#back-top').fadeOut(500);
       } else {
         $(".header-sticky").addClass("sticky-bar");
+        // $(".single-slider").removeClass("slider-height").addClass("slider-h");
+        $("body").css("padding-top", stickyBarHeight + "px");
         $('#back-top').fadeIn(500);
       }
     });
