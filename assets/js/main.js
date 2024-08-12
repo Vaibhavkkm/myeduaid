@@ -4,7 +4,7 @@
 
 /* 1. Proloder */
 $(window).on('load', function () {
-  $('#preloader-active').delay(150).fadeOut('slow', function() {
+  $('#preloader-active').delay(100).fadeOut('slow', function() {
     // After the preloader is completely hidden
     $('body').css({
       'overflow': 'visible'
