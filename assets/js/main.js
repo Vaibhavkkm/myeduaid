@@ -46,11 +46,7 @@ $(window).on('load', function () {
             if ($('.slicknav_menu').is(':visible') && $('.sticky-bar').is(':visible')) {
               var additionalOffset = -250; // Adjust the offset as needed
               scrollPosition = target.offset().top - $('.header-sticky').outerHeight() - additionalOffset;
-            } else if ($('.slicknav_menu').is(':visible') && !$('.sticky-bar').is(':visible')) {
-              var additionalOffset = 100; // Adjust the offset as needed
-              scrollPosition = target.offset().top - $('.header-sticky').outerHeight() - additionalOffset;
-            }
-             else {
+            } else {
                 scrollPosition = target.offset().top - $('.header-sticky').outerHeight();
             }
             $('html, body').animate({
