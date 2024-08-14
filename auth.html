@@ -15,6 +15,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Bree+Serif&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" type="text/css" href="assets/css/signup_style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+  href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
+  rel="stylesheet"
+  type="text/css"
+  />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
 	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -101,7 +115,7 @@
                                                 <li><a href="index.html">Home</a></li>
                                                 <li><a href="index.html#about">About</a></li>
                                                 <li><a href="index.html#causes">latest causes</a></li>
-                                                <li><a href="index.html#contact">Contact</a></li>
+                                                <li><a href="#contact">Contact</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -158,16 +172,19 @@
                     <!-- <i class="far fa-eye-slash"></i>  -->
                 </div>
                     
-                <div id="passwordMismatch" class="passwordMismatch ms-3 mt-1 mb-3">
+                <div id="passwordMismatch" class="passwordMismatch ms-3 mt-1 mb-2">
                     <i class="far fa-times-circle mt-1 mx-1"></i>
                     <p class="">Password mismatch</p>
                 </div>
       <!-- <i class="far fa-eye-slash"></i>  close-->
       <!-- <i class="fas fa-eye"></i> open -->
 
-                <div>
-                    <input type="checkbox" name="Sponser"> Check this if your are a Sponser! 
-                </div>
+
+                <select class="mb-4" name="role" id="role">
+                    <option value="" disabled selected>Register As</option>
+                    <option value="student">Student</option>
+                    <option value="sponsor">Sponsor</option>
+                </select>
 
                 <button class="btnf  mt-4 p-3 d-block" type="submit" onclick="arrowfn(1)">Sign Up
                     <div id="arrow1"  class="d-inline position-relative icon-arrow"><i class="fas fa-chevron-right"></i></div>
@@ -175,7 +192,7 @@
             </div> 
             <div class="regBtn mt-4" >
                 <!-- <hr> -->
-                    <span id ="log" class="switchTab" onclick="moveToReg()">Have already an account? Login here</span>
+                    <span id ="log" class="switchTab" onclick="moveToReg()">Have already an account? Sign In here</span>
                 <!-- <hr> -->
             </div>
         
@@ -209,7 +226,7 @@
 
                 <div class="regBtn mt-5" >
                     <!-- <hr> -->
-                        <span id ="reg" class="switchTab"  onclick="moveToLog()">Not a member? Sign up now</span>
+                        <span id ="reg" class="switchTab"  onclick="moveToLog()">Not a member? Sign Up now</span>
                     <!-- <hr> -->
                 </div>
 
@@ -218,6 +235,64 @@
 
         </div>
     </div>
+
+<!-- alternate sign-in box -->
+      <div class="login-page show-s-in">
+        <div class="form">
+      
+          <form>
+            <!-- <img src="/assets/img/hero/slide-img-1.png" alt="" width="100px"> -->
+            <input type="text" placeholder="&#xf007;  username"/>
+            <input type="password" id="password" placeholder="&#xf023;  password"/> 
+            <i class="fas fa-eye eye-pos" onclick="show()"></i> 
+            <br>
+            <br>
+            <button>LOGIN</button>
+            <button type="button" onclick="window.location.href='signup.html'">SIGN UP</button>
+            <p class="message"></p>
+
+            <div class="regBtn mt-5" >
+                <!-- <hr> -->
+                    <span id ="reg"  style="color: black;"  onclick="changeToSignUp()">Not a member? Sign Up now</span>
+                <!-- <hr> -->
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <!-- alternate sign-up box -->
+    <div class="login-page show-s-up">
+        <div class="form">
+          <form class="mb-5">
+            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="E-mail address" />
+            <input type="text" placeholder="User Name" />
+            <input type="password" id="password" placeholder="Password" /> <i class="fas fa-eye light eye-pos" onclick="show()"></i>
+            <select name="role" id="role">
+                <option disabled selected>Register As</option>
+                <option value="student">Student</option>
+                <option value="sponsor">Sponsor</option>
+            </select>
+            <br>
+            <br>
+          </form>
+  
+          <form class="login-form">
+            <button type="button" onclick="window.location.href='login.html'">
+              SIGN UP
+            </button>
+          </form>
+
+          <div class="regBtn mt-5" >
+            <!-- <hr> -->
+                <span id ="reg"  style="color: black;"  onclick="changeToSignIn()">Have already an account? Sign In here</span>
+            <!-- <hr> -->
+        </div>
+
+        </div>
+      </div>
+
 </main>
 
     <footer style="background-color: whitesmoke; margin-top: 10pc;">
@@ -334,11 +409,6 @@
             </div> 
         </div>
     </footer>
-
-    <!-- Scroll Up -->
-    <div id="back-top" >
-        <a title="Go to Top" href="#"> <i class="fa fa-angle-double-up"></i></a>
-    </div>
 
     <!-- JS here -->
 

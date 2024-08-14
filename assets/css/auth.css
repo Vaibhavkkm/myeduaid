@@ -154,3 +154,33 @@ hr{
     display: none;
     /* display: flex; */
 }
+
+@media (max-width: 820px) {
+    .login-box{
+        display: none;
+    }
+    .show-s-in {
+        display: block;
+        max-width: 90% !important;
+        margin-top: 2pc !important;
+    }
+    .show-s-up {
+        display: none;
+        max-width: 90% !important;
+        margin-top: 2pc !important;
+    }
+}
+@media (min-width: 821px) {
+    .show-s-in {
+        display: none !important;
+    }
+    .show-s-up {
+        display: none !important;
+    }
+}
+/* select option[value="hide"] {
+    display: none;
+} */
+ .nice-select ul .selected {
+     display: none;
+ }

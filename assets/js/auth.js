@@ -53,3 +53,18 @@ function moveToReg(){ // img - slider to left
   line[0].innerText = "Sign-Up to view your profile";
   
 }
+
+function changeToSignIn() {
+  var sign_up = document.getElementsByClassName("show-s-up");
+  sign_up[0].style.display = "none";
+
+  var sign_in = document.getElementsByClassName("show-s-in");
+  sign_in[0].style.display = "block";
+}
+function changeToSignUp() {
+  var sign_up = document.getElementsByClassName("show-s-in");
+  sign_up[0].style.display = "none";
+
+  var sign_in = document.getElementsByClassName("show-s-up");
+  sign_in[0].style.display = "block";
+}
